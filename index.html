@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Focus</h1>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </header>
+
+        <main>
+            <div class="timer-container">
+                <div class="timer-circle">
+                    <svg class="progress-ring" width="300" height="300">
+                        <circle class="progress-ring__circle" stroke="currentColor" stroke-width="8" fill="transparent" r="140" cx="150" cy="150"/>
+                    </svg>
+                    <div class="time-display" id="time-display">25:00</div>
+                    <div class="timer-label" id="timer-label">Focus</div>
+                </div>
+                
+                <div class="controls">
+                    <button id="start-btn" class="btn btn-primary">Start</button>
+                    <button id="pause-btn" class="btn btn-secondary" disabled>Pause</button>
+                    <button id="reset-btn" class="btn btn-tertiary">Reset</button>
+                </div>
+            </div>
+
+            <div class="tasks-section">
+                <h2>Tasks</h2>
+                <div class="input-group">
+                    <input type="text" id="task-input" placeholder="What are you working on?">
+                    <button id="add-task-btn" class="btn-icon-add">+</button>
+                </div>
+                <ul id="task-list" class="task-list">
+                    <!-- Tasks will be added here dynamically -->
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
