@@ -2,7 +2,8 @@
     --bg-color: #FDFCF8;
     --text-primary: #2D3436;
     --text-secondary: #636E72;
-    --accent-color: #74b9ff; /* Soft Blue */
+    --accent-color: #74b9ff;
+    /* Soft Blue */
     --accent-hover: #0984e3;
     --container-bg: #FFFFFF;
     --shadow-soft: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
@@ -17,7 +18,8 @@
     --text-primary: #dfe6e9;
     --text-secondary: #b2bec3;
     --accent-color: #81ecec;
-    --accent-hover: #4cd137; /* Adjusted for dark mode visibility if needed, or keep consistent */
+    --accent-hover: #4cd137;
+    /* Adjusted for dark mode visibility if needed, or keep consistent */
     --container-bg: #2d3436;
     --shadow-soft: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
 }
@@ -71,7 +73,7 @@ h1 {
 }
 
 .icon-btn:hover {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .timer-container {
@@ -149,15 +151,17 @@ h1 {
     box-shadow: 0 6px 16px rgba(136, 176, 75, 0.4);
 }
 
-.btn-secondary, .btn-tertiary {
+.btn-secondary,
+.btn-tertiary {
     background-color: transparent;
     color: var(--text-secondary);
     border: 1px solid transparent;
 }
 
-.btn-secondary:hover, .btn-tertiary:hover {
+.btn-secondary:hover,
+.btn-tertiary:hover {
     color: var(--text-primary);
-    background-color: rgba(0,0,0,0.03);
+    background-color: rgba(0, 0, 0, 0.03);
 }
 
 .btn:disabled {
@@ -228,7 +232,7 @@ h1 {
     display: flex;
     align-items: center;
     padding: 0.8rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     animation: fadeIn 0.3s ease;
 }
 
@@ -274,6 +278,31 @@ h1 {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quote-container {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-text {
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    animation: fadeIn 0.5s ease;
 }
